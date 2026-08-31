@@ -1,0 +1,54 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Tile Adventure Game"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Game="*uid://dergupcsleih7"
+UISignals="*uid://brcedcn8c0vyv"
+Signals="*uid://dufc00mlncj06"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1008
+window/size/resizable=false
+window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="Tile Adventure Game"
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "blue",
+"res://app/": "blue",
+"res://art/": "yellow",
+"res://content/": "yellow",
+"res://player/": "red",
+"res://sound/": "yellow",
+"res://systems/": "purple"
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
