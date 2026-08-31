@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://njdv8derm4ur"]
+
+[ext_resource type="Script" uid="uid://bh56rj0upjhgl" path="res://systems/tiles/tile.gd" id="1_42m6k"]
+[ext_resource type="Texture2D" uid="uid://yrel68ho7os4" path="res://art/debug/spr_debug_tile.png" id="2_2lc2c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_648sm"]
+size = Vector2(120, 120)
+
+[node name="GameTile" type="Area2D" unique_id=404245113]
+script = ExtResource("1_42m6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=681056962]
+shape = SubResource("RectangleShape2D_648sm")
+debug_color = Color(0.92607796, 0.70427847, 0, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1726767125]
+texture = ExtResource("2_2lc2c")

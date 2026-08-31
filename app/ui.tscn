@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cdalmgil3ruoy"]
+
+[ext_resource type="Texture2D" uid="uid://cc447y6ipbc77" path="res://art/debug/spr_debug_gameBorder.png" id="1_37e5k"]
+
+[node name="UI" type="Control" unique_id=900616292]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GameBorder" type="TextureRect" parent="." unique_id=742361659]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_37e5k")
