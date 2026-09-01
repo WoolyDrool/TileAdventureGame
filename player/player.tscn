@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cfvdbfsk78bju"]
+
+[ext_resource type="Script" uid="uid://bbndnlyll5n0d" path="res://player_controller.gd" id="1_oul6g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
+size = Vector2(120, 120)
+
+[node name="Player" type="Area2D" unique_id=1520236285]
+script = ExtResource("1_oul6g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1096259987]
+shape = SubResource("RectangleShape2D_rkbax")
+debug_color = Color(0.8888172, 0, 0.117830016, 0.41960785)
