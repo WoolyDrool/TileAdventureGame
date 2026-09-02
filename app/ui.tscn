@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cdalmgil3ruoy"]
 
 [ext_resource type="Texture2D" uid="uid://cc447y6ipbc77" path="res://art/debug/spr_debug_gameBorder.png" id="1_37e5k"]
+[ext_resource type="Theme" uid="uid://d1cl40ipqynmq" path="res://GeneralTheme.tres" id="2_231us"]
 
 [node name="UI" type="Control" unique_id=900616292]
 layout_mode = 3
@@ -9,7 +10,126 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="GameBorder" type="TextureRect" parent="." unique_id=742361659]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_37e5k")
+
+[node name="Action Buttons" type="Control" parent="." unique_id=1350033065]
+anchors_preset = 0
+offset_top = 65.0
+offset_right = 40.0
+offset_bottom = 105.0
+
+[node name="CheckScent" type="Button" parent="Action Buttons" unique_id=2113012095]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 742.0
+offset_right = 253.0
+offset_bottom = 792.0
+theme = ExtResource("2_231us")
+text = "Check Scent"
+
+[node name="Explore" type="Button" parent="Action Buttons" unique_id=293808748]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 803.0
+offset_right = 200.0
+offset_bottom = 853.0
+theme = ExtResource("2_231us")
+text = "Explore"
+
+[node name="Label" type="Label" parent="Action Buttons/Explore" unique_id=1580196097]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 51.0
+offset_right = 382.0
+offset_bottom = 79.0
+theme = ExtResource("2_231us")
+text = "Reveals what an occupied space contains"
+
+[node name="Hunt" type="Button" parent="Action Buttons" unique_id=2047880851]
+layout_mode = 0
+offset_left = 617.0
+offset_top = 748.0
+offset_right = 719.0
+offset_bottom = 798.0
+theme = ExtResource("2_231us")
+text = "Hunt"
+
+[node name="Label" type="Label" parent="Action Buttons/Hunt" unique_id=1901020094]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 51.0
+offset_right = 382.0
+offset_bottom = 79.0
+theme = ExtResource("2_231us")
+text = "Hunt in a selected space"
+
+[node name="Drink" type="Button" parent="Action Buttons" unique_id=453630678]
+layout_mode = 0
+offset_left = 996.0
+offset_top = 879.0
+offset_right = 1098.0
+offset_bottom = 929.0
+theme = ExtResource("2_231us")
+text = "Drink"
+
+[node name="Label" type="Label" parent="Action Buttons/Drink" unique_id=1940405592]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 51.0
+offset_right = 708.0
+offset_bottom = 124.0
+theme = ExtResource("2_231us")
+text = "Drink from your currently occupied space. Regain pseudo-random amount of thirst (relies on current terrain?)"
+autowrap_mode = 3
+
+[node name="Rest" type="Button" parent="Action Buttons" unique_id=1383705539]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 749.0
+offset_right = 1094.0
+offset_bottom = 799.0
+theme = ExtResource("2_231us")
+text = "Rest"
+
+[node name="Label" type="Label" parent="Action Buttons/Rest" unique_id=402344139]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 51.0
+offset_right = 382.0
+offset_bottom = 79.0
+theme = ExtResource("2_231us")
+text = "Rest in your currently occupied space
+Regain a pseudo-random amount of health"
+
+[node name="Battle" type="Button" parent="Action Buttons" unique_id=443713120]
+layout_mode = 0
+offset_left = 619.0
+offset_top = 844.0
+offset_right = 721.0
+offset_bottom = 894.0
+theme = ExtResource("2_231us")
+text = "Battle"
+
+[node name="Label" type="Label" parent="Action Buttons/Battle" unique_id=550514093]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 421.0
+offset_bottom = 84.0
+theme = ExtResource("2_231us")
+text = "Fight in a selected space"
+
+[node name="Gameplay Loop Notes" type="RichTextLabel" parent="." unique_id=981923945]
+layout_mode = 0
+offset_left = 1449.0
+offset_top = 494.0
+offset_right = 1904.0
+offset_bottom = 845.0
+theme = ExtResource("2_231us")
+text = "Turn start: Player rolls their movement (Speed+Roll)
+Player can then use Check Scent to find occupied tiles and the rest of the buttons to interact with the occupied tiles.
+Each action costs movement points."

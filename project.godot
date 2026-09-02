@@ -24,7 +24,7 @@ Signals="*uid://dufc00mlncj06"
 [display]
 
 window/size/viewport_width=1920
-window/size/viewport_height=1008
+window/size/viewport_height=1080
 window/size/resizable=false
 window/stretch/mode="canvas_items"
 

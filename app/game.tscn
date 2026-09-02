@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://c1uop7t6vmbsk"]
 
+[ext_resource type="Texture2D" uid="uid://tk4dk3hoc84t" path="res://Placeholders/spr_tempUI_backing.png" id="1_bwvno"]
 [ext_resource type="PackedScene" uid="uid://br76diikyc33h" path="res://app/gameplay.tscn" id="1_cqvo2"]
 [ext_resource type="PackedScene" uid="uid://cdalmgil3ruoy" path="res://app/ui.tscn" id="2_bwvno"]
 
 [node name="Game" type="Node2D" unique_id=1411547365]
+
+[node name="SprTempUiBacking" type="Sprite2D" parent="." unique_id=911187243]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_bwvno")
+centered = false
 
 [node name="Gameplay" parent="." unique_id=1141961247 instance=ExtResource("1_cqvo2")]
 
