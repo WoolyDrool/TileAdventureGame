@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Game="*uid://dergupcsleih7"
 UISignals="*uid://brcedcn8c0vyv"
 Signals="*uid://dufc00mlncj06"
+TurnManager="*uid://de74q0geob2bf"
 
 [display]
 
