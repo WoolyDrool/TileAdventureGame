@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://yrel68ho7os4" path="res://art/debug/spr_debug_tile.png" id="2_2lc2c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_648sm"]
-size = Vector2(120, 120)
+size = Vector2(150, 150)
 
 [node name="GameTile" type="Area2D" unique_id=404245113]
 script = ExtResource("1_42m6k")
